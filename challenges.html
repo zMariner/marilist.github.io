@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="middle2.css">
+  <script src="script2.js"></script>
+  <style>
+    .challenges-button,
+    .levels-button {
+      background-color: #ffffff;
+      color: rgb(0, 0, 0);
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+      text-align: center;
+      font-family: Arial, sans-serif; /* Change the font family as needed */
+      text-decoration: none; /* Remove underline */
+      transition: background-color 0.3s ease, transform 0.3s ease; /* Add transition for smooth color and transform change */
+    }
+
+    .challenges-button:hover,
+    .levels-button:hover {
+      background-color: #f2f2f2; /* Change to the desired hover background color */
+      transform: scale(1.05); /* Increase scale on hover (adjust as needed) */
+    }
+
+    .challenges-button:focus,
+    .levels-button:focus {
+      outline: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="middle2" id="challengeList">
+    <a href="index.html" class="levels-button">Levels</a>
+    <a href="challenges.html" class="challenges-button">Challenges</a>
+  </div>
+</body>
+</html>
