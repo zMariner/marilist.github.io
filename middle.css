@@ -1,0 +1,147 @@
+body {
+  height: 100vh;
+  overflow-y: auto;
+  display: flex;
+  align-items: left;
+  justify-content: flex-start;
+  padding-left: 32px;
+  background-image: url('https://img.youtube.com/vi/K5FK2kOptzI/maxresdefault.jpg');
+  background-size: cover;
+  background-position: stretch;
+}
+
+.middle {
+  font-family: "Arial", serif;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 64px;
+  margin-right: auto; /* Add margin-right:auto to center horizontally within the available space */
+}
+
+
+.list-item {
+  background-color: #ffffff;
+  min-width: 1028px;
+  height: 160px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  column-gap: 16px;
+  max-width: 928px;
+  border-radius: 32px;
+  padding: 0 16px;
+  box-sizing: border-box;
+  transition: filter 0.5s, transform 0.5s;
+  animation-name: loadingAnim;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in-out;
+  box-shadow: 0px 0px 15px 5px rgba(110, 70, 45, 0.3);
+}
+
+.list-item:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+@keyframes loadingAnim {
+  0% {
+    transform: translateY(50px);
+    filter: opacity(0);
+  }
+  25% {
+    transform: translateY(50px);
+    filter: opacity(0);
+  }
+  100% {
+    transform: translateY(0px);
+    filter: opacity(100%);
+  }
+}
+
+.list-number {
+  flex: 0.15;
+  padding: 0 16px;
+  font-size: 2.25rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.list-thumbnail {
+  display: flex;
+  justify-content: center;
+  width: 285px;
+}
+
+.list-thumbnail a {
+  display: flex;
+  position: relative;
+  text-decoration: none;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.list-image {
+  height: 160px;
+}
+
+.list-info {
+  flex: 1;
+  padding: 16px 16px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.level-info {
+  display: flex;
+  align-items: bottom;
+  column-gap: 16px;
+}
+
+.level-name {
+  color: #161616;
+  font-size: 28px;
+  font-weight: 600;
+  transition: color 0.25s;
+  padding: 8px 0px;
+  margin-bottom: 12px;
+}
+
+.level-id,
+.level-author,
+.level-beaten {
+  flex: 1;
+  color: #525252;
+  font-size: 18px;
+}
+
+.level-id:hover {
+  cursor: pointer;
+}
+
+.level-id {
+  user-select: none;
+}
+
+.level-id:before,
+.level-author:before,
+.level-beaten:before {
+  white-space: pre;
+  color: #a8a8a8;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.level-id:before {
+  content: "ID\a";
+}
+
+.level-author:before {
+  content: "created by\a";
+}
+
+.level-beaten:before {
+  content: "beaten on\a";
+}
