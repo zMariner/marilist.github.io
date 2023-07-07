@@ -5,9 +5,9 @@ body {
   align-items: left;
   justify-content: flex-start;
   padding-left: 32px;
-  background-image: url('https://img.youtube.com/vi/K5FK2kOptzI/maxresdefault.jpg');
-  background-size: cover;
-  background-position: stretch;
+  background: linear-gradient(to bottom, #727272, #181818);
+  background-attachment: fixed;
+  font-family: "Arial", serif;
 }
 
 .middle2 {
@@ -37,7 +37,9 @@ body {
   animation-duration: 1.5s;
   animation-timing-function: ease-in-out;
   box-shadow: 0px 0px 15px 5px rgba(110, 70, 45, 0.3);
+  border: 8px double #000000; /* Add the double border style */
 }
+
 
 .list-item:hover {
   cursor: pointer;
@@ -46,11 +48,11 @@ body {
 
 @keyframes loadingAnim {
   0% {
-    transform: translateY(50px);
+    transform: translateY(0px);
     filter: opacity(0);
   }
   25% {
-    transform: translateY(50px);
+    transform: translateY(0px);
     filter: opacity(0);
   }
   100% {
@@ -61,7 +63,7 @@ body {
 
 .list-number {
   flex: 0.15;
-  padding: 0 16px;
+  padding: 0 0px;
   font-size: 2.25rem;
   font-weight: 600;
   text-align: center;
@@ -70,7 +72,14 @@ body {
 .list-thumbnail {
   display: flex;
   justify-content: center;
-  width: 285px;
+  width: 255px;
+  overflow: hidden; /* Add overflow: hidden to clip content */
+  border: none;
+}
+
+.list-image {
+  max-width: 100%; /* Ensure the image scales down within the container */
+  height: auto; /* Maintain the image's aspect ratio */
 }
 
 .list-thumbnail a {
@@ -80,10 +89,6 @@ body {
   text-indent: 100%;
   white-space: nowrap;
   overflow: hidden;
-}
-
-.list-image {
-  height: 160px;
 }
 
 .list-info {
@@ -97,16 +102,17 @@ body {
 .level-info {
   display: flex;
   align-items: bottom;
-  column-gap: 16px;
+  column-gap: 1px;
 }
 
 .level-name {
-  color: #161616;
+  color: #000000;
   font-size: 28px;
   font-weight: 600;
   transition: color 0.25s;
-  padding: 8px 0px;
+  padding: 0px 0px;
   margin-bottom: 12px;
+  margin-top: 20px; /* Add margin-top with desired value */
 }
 
 .level-id,
