@@ -1,17 +1,19 @@
 window.addEventListener('DOMContentLoaded', function() {
     var levels = [
-      { name: 'Frozen Cave', id: '68908396', author: 'TrueParadoxTeam', Beaten: '18 Apr 2023', videoUrl: 'https://www.youtube.com/watch?v=J57GlLpUbRg', type: 'Level' },
-      { name: 'Wasureta', id: '64658786', author: 'HelpegasuS', Beaten: '14 Mar 2023', videoUrl: 'https://www.youtube.com/watch?v=K5FK2kOptzI', type: 'Level' },
-      { name: 'Dolos', id: '58417850', author: 'Enzeux', Beaten: '1 Apr 2023', videoUrl: 'https://www.youtube.com/watch?v=iscKMHv-Lsk', type: 'Level' },
-      { name: 'Shitty Minusdry (my ver)', id: '90383853', author: 'Wiktor and Mystix', Beaten: '23 Aug 2022', videoUrl: 'https://www.youtube.com/watch?v=yd3RoTdunJo', type: 'Level' },
-      { name: 'Bloodbath', id: '10565740', author: 'Riot', Beaten: '23 Aug 2022', videoUrl: 'https://www.youtube.com/watch?v=W8cPS8VTZp0', type: 'Level' },
-      { name: 'Prismatic Haze', id: '59899374', author: 'Cirtrax', Beaten: '30 Mar 2023', videoUrl: 'https://www.youtube.com/watch?v=McXMhw1kafg', type: 'Level' },
-      { name: 'Cataclysm', id: '3979721', author: 'Ggb0y', Beaten: '2 Aug 2022', videoUrl: 'https://www.youtube.com/watch?v=0r-7XShVfeg', type: 'Level' },
-      { name: 'Acu', id: '61079355', author: 'Neigefeu', Beaten: '27 Dec 2022', videoUrl: 'https://www.youtube.com/watch?v=uraoLJbRsfk', type: 'Level' },
-      { name: 'Hidden in the Sand', id: '87481937', author: 'ASBCHazel', Beaten: '3 Mar 2023', videoUrl: 'https://www.youtube.com/watch?v=b6Fr7SEcy84', type: 'Level' },
-      { name: 'My Time', id: '82595578', author: 'Blueskii', Beaten: '11 Nov 2022', videoUrl: 'https://youtu.be/b0VpGcJkhHo', type: 'Level' }
+      { name: '#81 - Frozen Cave', id: '68908396', author: 'TrueParadoxTeam', Beaten: '18 Apr 2023', videoUrl: 'https://www.youtube.com/watch?v=J57GlLpUbRg', type: 'Level' },
+      { name: '#90 - Wasureta', id: '64658786', author: 'HelpegasuS', Beaten: '14 Mar 2023', videoUrl: 'https://www.youtube.com/watch?v=K5FK2kOptzI', type: 'Level' },
+      { name: '#248 - Dolos', id: '58417850', author: 'Enzeux', Beaten: '1 Apr 2023', videoUrl: 'https://www.youtube.com/watch?v=iscKMHv-Lsk', type: 'Level' },
+      { name: '#N/A - Shitty Minusdry (my ver)', id: '90383853', author: 'Wiktor and Mystix', Beaten: '23 Aug 2022', videoUrl: 'https://www.youtube.com/watch?v=yd3RoTdunJo', type: 'Level' },
+      { name: '#261 - Bloodbath', id: '10565740', author: 'Riot', Beaten: '23 Aug 2022', videoUrl: 'https://www.youtube.com/watch?v=W8cPS8VTZp0', type: 'Level' },
+      { name: '#325 - Prismatic Haze', id: '59899374', author: 'Cirtrax', Beaten: '30 Mar 2023', videoUrl: 'https://www.youtube.com/watch?v=McXMhw1kafg', type: 'Level' },
+      { name: '#347 - Cataclysm', id: '3979721', author: 'Ggb0y', Beaten: '2 Aug 2022', videoUrl: 'https://www.youtube.com/watch?v=0r-7XShVfeg', type: 'Level' },
+      { name: '#N/A - Acu', id: '61079355', author: 'Neigefeu', Beaten: '27 Dec 2022', videoUrl: 'https://www.youtube.com/watch?v=uraoLJbRsfk', type: 'Level' },
+      { name: '#N/A - Hidden in the Sand', id: '87481937', author: 'ASBCHazel', Beaten: '3 Mar 2023', videoUrl: 'https://www.youtube.com/watch?v=b6Fr7SEcy84', type: 'Level' },
+      { name: '#N/A - My Time', id: '82595578', author: 'Blueskii', Beaten: '11 Nov 2022', videoUrl: 'https://youtu.be/b0VpGcJkhHo', type: 'Level' }
     ];
  
+    
+
     var levelList = document.getElementById('levelList');
     var challengeList = document.getElementById('challengeList');
   
@@ -82,3 +84,5 @@ listItem.addEventListener('click', function() {
       }
     }
   });
+
+  
