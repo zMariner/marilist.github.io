@@ -2,7 +2,8 @@ body {
   height: 100vh;
   overflow-y: auto;
   display: flex;
-  align-items: left;
+  flex-direction: column;
+  align-items: flex-start;
   justify-content: flex-start;
   padding-left: 32px;
   background: linear-gradient(to bottom, #727272, #181818);
@@ -16,34 +17,15 @@ body {
   flex-direction: column;
   gap: 16px;
   padding: 64px;
-  margin-right: auto; /* Add margin-right:auto to center horizontally within the available space */
-}
-
-
-.list-item {
-  background-color: #ffffff;
-  min-width: 1028px;
-  height: 160px;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  column-gap: 16px;
+  margin: 0 auto;
   max-width: 928px;
-  border-radius: 32px;
-  padding: 0 16px;
-  box-sizing: border-box;
-  transition: filter 0.5s, transform 0.5s;
-  animation-name: loadingAnim;
-  animation-duration: 1.5s;
-  animation-timing-function: ease-in-out;
-  box-shadow: 0px 0px 15px 5px rgba(110, 70, 45, 0.3);
-  border: 8px double #000000; /* Add the double border style */
+  width: 100%;
 }
-
 
 .list-item:hover {
   cursor: pointer;
-  transform: scale(1.1);
+  transform: scale(1.05);
+  border: 8px double #636363;
 }
 
 @keyframes loadingAnim {
@@ -61,34 +43,47 @@ body {
   }
 }
 
+.list-item {
+  background-color: #ffffff;
+  min-width: 100%;
+  height: 160px;
+  display: flex;
+  align-items: center;
+  column-gap: 16px;
+  border-radius: 32px;
+  padding: 0 16px;
+  box-sizing: border-box;
+  transition: filter 0.5s, transform 0.5s;
+  animation-name: loadingAnim;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in-out;
+  box-shadow: 0px 0px 15px 5px rgba(110, 70, 45, 0.3);
+  border: 8px double #000000;
+}
+
 .list-number {
   flex: 0.15;
-  padding: 0 0px;
-  font-size: 2.25rem;
+  padding: 0 16px;
+  font-size: 2.10rem;
   font-weight: 600;
   text-align: center;
+  margin-left: -30px;
 }
 
 .list-thumbnail {
   display: flex;
   justify-content: center;
-  width: 255px;
-  overflow: hidden; /* Add overflow: hidden to clip content */
+  width: 256px;
+  overflow: hidden;
   border: none;
+  margin-left: -30px;
+  margin-bottom: -3px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.432);
 }
 
 .list-image {
-  max-width: 100%; /* Ensure the image scales down within the container */
-  height: auto; /* Maintain the image's aspect ratio */
-}
-
-.list-thumbnail a {
-  display: flex;
-  position: relative;
-  text-decoration: none;
-  text-indent: 100%;
-  white-space: nowrap;
-  overflow: hidden;
+  max-width: 100%;
+  height: auto;
 }
 
 .list-info {
@@ -102,22 +97,23 @@ body {
 .level-info {
   display: flex;
   align-items: bottom;
-  column-gap: 1px;
+  column-gap: 16px;
 }
 
 .level-name {
-  color: #000000;
+  color: #161616;
   font-size: 28px;
   font-weight: 600;
   transition: color 0.25s;
-  padding: 0px 0px;
-  margin-bottom: 12px;
-  margin-top: 20px; /* Add margin-top with desired value */
+  padding: 8px 0px;
+  margin-bottom: 0px;
 }
 
 .level-id,
 .level-author,
 .level-beaten {
+  margin-top: -10px;
+  margin-bottom: 30px;
   flex: 1;
   color: #525252;
   font-size: 18px;
@@ -128,7 +124,7 @@ body {
 }
 
 .level-id {
-  user-select: none;
+  user-select: all;
 }
 
 .level-id:before,
@@ -141,13 +137,13 @@ body {
 }
 
 .level-id:before {
-  content: "ID\a";
+  content: "Level ID\a";
 }
 
 .level-author:before {
-  content: "created by\a";
+  content: "Created by\a";
 }
 
 .level-beaten:before {
-  content: "beaten on\a";
+  content: "Beaten on\a";
 }
