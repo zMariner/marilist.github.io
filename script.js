@@ -11,8 +11,6 @@ window.addEventListener('DOMContentLoaded', function() {
       { name: '#N/A - Hidden in the Sand', id: '87481937', author: 'ASBCHazel', Beaten: '3 Mar 2023', videoUrl: 'https://www.youtube.com/watch?v=b6Fr7SEcy84', type: 'Level' },
       { name: '#N/A - My Time', id: '82595578', author: 'Blueskii', Beaten: '11 Nov 2022', videoUrl: 'https://youtu.be/b0VpGcJkhHo', type: 'Level' }
     ];
- 
-    
 
     var levelList = document.getElementById('levelList');
     var challengeList = document.getElementById('challengeList');
@@ -60,19 +58,8 @@ window.addEventListener('DOMContentLoaded', function() {
       listItem.appendChild(listNumber);
       listItem.appendChild(listThumbnail);
       listItem.appendChild(listInfo);
-  
-      if (level.type === 'Challenge') {
-        
-var challengePageUrl = './challenges.html';
 
-// Redirect to the challenges page when a challenge item is clicked
-listItem.addEventListener('click', function() {
-  window.location.href = challengePageUrl;
-});
-
-      } else if (level.type === 'Level') {
         levelList.appendChild(listItem);
-      }
     });
   
     function extractVideoId(url) {
