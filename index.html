@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" href="middle.css">
-  <script src="script.js"></script>
+  <link rel="stylesheet" href="middle3.css">
   <style>
     body {
       margin: 0;
@@ -31,6 +30,7 @@
     }
 
     .challenges-button,
+    .info-button,
     .levels-button {
       background-color: #ffffff;
       color: rgb(0, 0, 0);
@@ -50,12 +50,15 @@
     }
 
     .challenges-button:hover,
+    .info-button:hover,
     .levels-button:hover {
+      border: 8px double #636363;
       background-color: #f2f2f2; /* Change to the desired hover background color */
       transform: scale(1.05); /* Increase scale on hover (adjust as needed) */
     }
 
     .challenges-button:focus,
+    .info-button:focus,
     .levels-button:focus {
       outline: none;
     }
@@ -63,12 +66,15 @@
 </head>
 <body>
   <div class="sidebar">
-    <a href="index.html" class="levels-button">Levels</a>
+    <a href="index.html" class="info-button">Info</a>
+    <a href="levels.html" class="levels-button">Levels</a>
     <a href="challenges.html" class="challenges-button">Challenges</a>
   </div>
+  <div class="container">
   <div class="content">
-    <div class="middle" id="levelList">
+    <div class="middle3" id="infoList">
       <!-- Your existing content goes here -->
+    </div>
     </div>
   </div>
 </body>
