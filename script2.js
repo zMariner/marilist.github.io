@@ -1,7 +1,7 @@
 window.addEventListener('DOMContentLoaded', function() {
   var levels = [
     { name: 'Under Heroine I', id: '92182309', author: 'Mariner', Beaten: '6 Jul 2023', videoUrl: 'https://www.youtube.com/watch?v=4cK_ZNj7D7c', type: 'Challenge' },
-    { name: 'Cave of Lilys', id: '10565740', author: 'WDWiktor', Beaten: '30 May 2023', videoUrl: 'https://youtu.be/6B8mPt69P4I', type: 'Challenge' },
+    { name: 'Cave of Lilys', id: '91130171', author: 'WDWiktor', Beaten: '30 May 2023', videoUrl: 'https://youtu.be/6B8mPt69P4I', type: 'Challenge' },
     { name: 'In the End', id: '87989862', author: 'maaaaaaaaaaark2', Beaten: '13 May 2023', videoUrl: 'https://youtu.be/c44KdklvQ1w', type: 'Challenge' }
   ];
 
