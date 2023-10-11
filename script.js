@@ -1,6 +1,6 @@
 window.addEventListener('DOMContentLoaded', function() {
     var levels = [
-        { name: '#9 - Firework', id: '75206202', author: 'TrickGMD', Beaten: 'Not yet', videoUrl: 'https://www.youtube.com/watch?v=CFFzLADtE28', type: 'Level' },
+        { name: '#9 - Firework 82%', id: '75206202', author: 'TrickGMD', Beaten: 'Not yet', videoUrl: 'https://www.youtube.com/watch?v=CFFzLADtE28', type: 'Level' },
       { name: '#81 - Frozen Cave', id: '68908396', author: 'TrueParadoxTeam', Beaten: '18 Apr 2023', videoUrl: 'https://www.youtube.com/watch?v=J57GlLpUbRg', type: 'Level' },
       { name: '#90 - Wasureta', id: '64658786', author: 'HelpegasuS', Beaten: '14 Mar 2023', videoUrl: 'https://www.youtube.com/watch?v=K5FK2kOptzI', type: 'Level' },
       { name: '#248 - Dolos', id: '58417850', author: 'Enzeux', Beaten: '1 Apr 2023', videoUrl: 'https://www.youtube.com/watch?v=iscKMHv-Lsk', type: 'Level' },
