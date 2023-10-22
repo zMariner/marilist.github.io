@@ -1,39 +1,61 @@
 body {
-    background: linear-gradient(to bottom, #727272, #181818);
-    background-attachment: fixed;
-  }
-  
-  .container {
-    display: flex;
-    justify-content: center; /* Center the box horizontally */
-    align-items: center; /* Center the box vertically */
-    height: 100vh;  
-    margin-left: 535px;
-  }
-  
-  .content {
-    padding: 50px;
-    width: 620px;
-    height: 260px;
-    background-color: #ffffff;
-    border-radius: 10px;
-    border: 8px double #000000; /* Add the double border style */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.432);
-  }
-  
-  .content::before {
-    content: "Welcome to The MariList";
-    font-size: 24px;
-    font-weight: bold;
-    text-align: center;
-    margin-top: 80px;
-    display: block;
-  }
-  
-  .content::after {
-    content: "This is just a website to see the hardest levels I've beaten.";
-    font-size: 18px;
-    text-align: center;
-    display: block;
-    margin-top: 50px;
-  }
+  background: linear-gradient(to bottom, #0c0c0c, #181818);
+  background-attachment: fixed;
+}
+
+.container {
+  display: flex;
+  justify-content: center; /* Center the box horizontally */
+  align-items: center; /* Center the box vertically */
+  height: 100vh;
+  position: relative; /* Add relative positioning */
+  margin: 0 auto; /* Center the container horizontally */
+}
+
+
+.content {
+  position: relative;
+  padding: 50px;
+  width: 620px;
+  height: 260px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  border: 8px double #000000; /* Add the double border style */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.432);
+}
+
+.content::before {
+  content: "Welcome to The MariList.";
+  font-size: 44px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 80px;
+  display: block;
+}
+
+.content::after {
+  content: "This is just a website to see the hardest levels I've beaten.";
+  font-size: 18px;
+  text-align: center;
+  display: block;
+  margin-top: 50px;
+}
+
+.gray-box {
+  position: absolute;
+  right: 20px; /* Move the box over to the right */
+  bottom: 20px; /* Move the box to the bottom */
+  width: 100px;
+  height: 40px;
+  background-color: #888888;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.gray-box::before {
+  content: "lol";
+}
