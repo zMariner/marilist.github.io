@@ -12,7 +12,11 @@ window.addEventListener('DOMContentLoaded', function() {
       { name: '#N/A - Acu', id: '61079355', author: 'Neigefeu', Beaten: '27 Dec 2022', videoUrl: 'https://www.youtube.com/watch?v=uraoLJbRsfk', type: 'Level' },
       { name: '#N/A - Hidden in the Sand', id: '87481937', author: 'ASBCHazel', Beaten: '3 Mar 2023', videoUrl: 'https://www.youtube.com/watch?v=b6Fr7SEcy84', type: 'Level' },
       { name: '#N/A - Spin Right Round', id: '91737656', author: 'Blueskii', Beaten: '8 Aug 2023', videoUrl: 'https://youtu.be/lc2inLYqBb4', type: 'Level' },
-      { name: '#N/A - My Time', id: '82595578', author: 'Blueskii', Beaten: '11 Nov 2022', videoUrl: 'https://youtu.be/b0VpGcJkhHo', type: 'Level' }
+      { name: '#N/A - Firewall', id: '13437081', author: 'Hinds', Beaten: '28 Jul 2022', videoUrl: 'https://www.youtube.com/watch?v=A2-I-os-oKs', type: 'Level' },
+      { name: '#N/A - Supersonic', id: '4706930', author: 'ZenticAlpha', Beaten: '18 Jul 2022', videoUrl: 'https://youtu.be/l97leHRa4xU?si=6RJFxsNHgBzn80xb', type: 'Level' },
+      { name: '#N/A - My Time', id: '82595578', author: 'Blueskii', Beaten: '11 Nov 2022', videoUrl: 'https://youtu.be/b0VpGcJkhHo', type: 'Level' },
+      { name: '#N/A - 8o', id: '9145301', author: 'Zobros', Beaten: '8 Jul 2022', videoUrl: 'https://www.youtube.com/watch?v=Q-vbTISgQBs', type: 'Level' },
+      { name: '#N/A - Windy Landscape', id: '4957691', author: 'WOOGI1411', Beaten: '6 Jul 2022', videoUrl: 'https://www.youtube.com/watch?v=8r-RiL_kc1w', type: 'Level' }
     ];
 
     var levelList = document.getElementById('levelList');
