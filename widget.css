@@ -1,0 +1,23 @@
+.widget-container {
+    position: fixed; /* Position the widget */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0)/* Background color with some transparency */
+    z-index: 1; /* Set a high z-index to place the widget on top */
+    display: flex;
+    align-items: stretch;
+    justify-content: normal;
+    margin-left: 125px;
+    margin-top: 175px;
+  }
+  
+  .widget-container iframe {
+    width: 350px; /* Set the desired width */
+    height: 700px; /* Set the desired height */
+    background: #000; /* Background color for the widget */
+    border: none; /* Remove the iframe border if needed */
+    box-shadow: 0 0 10px rgb(0, 0, 0); /* Add a box shadow for styling */
+  }
+  
