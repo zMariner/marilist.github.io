@@ -2,6 +2,7 @@
 <html>
 <head>
   <link rel="stylesheet" href="middle.css">
+  <link rel="stylesheet" href="widget.css">
   <script src="script.js"></script>
   <style>
     body {
@@ -22,14 +23,15 @@
       box-sizing: border-box;
       display: inline-flex;
       justify-content: center; /* Align content horizontally */
-      z-index: 2; /* Set a higher z-index to make it appear on top */
+      z-index: 4; /* Set a higher z-index to make it appear on top */
       margin-bottom: 00px; /* Add a margin to the bottom to separate it from the content */
     }
 
     .text-box {
   background: #1d1d1d;
-  color: #161616;
+  color: #0e0e0e;
   padding: 0px;
+  z-index: 3;
   width: 100%;
   margin: 00px; /* Add margin to all sides */
   text-align: center; /* Align the text to the right */
@@ -80,6 +82,10 @@
   </style>
 </head>
 <body>
+  <!-- Widget Container -->
+  <div class="widget-container">
+    <iframe src="https://discord.com/widget?id=901414769691623464&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+  </div>
   <div class="sidebar">
     <a href="levels.html" class="levels-button">Levels</a>
     <a href="challenges.html" class="challenges-button">Challenges</a>
