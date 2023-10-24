@@ -25,7 +25,7 @@ window.addEventListener('DOMContentLoaded', function() {
       thumbnailImage.classList.add('list-image');
       thumbnailImage.alt = 'Level thumbnail';
       var videoId = extractVideoId(level.videoUrl);
-      var thumbnailUrl = `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`;
+      var thumbnailUrl = `https://img.youtube.com/vi/${videoId}/mqdefault.jpg`;
       thumbnailImage.src = thumbnailUrl;
       thumbnailLink.appendChild(thumbnailImage);
       listThumbnail.appendChild(thumbnailLink);
