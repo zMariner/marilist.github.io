@@ -56,21 +56,28 @@ window.addEventListener('DOMContentLoaded', function() {
   
 // Display the popup
 listItem.addEventListener('click', function() {
-  // Create an iframe element for the video embed
-  var videoEmbed = document.createElement('iframe');
-  videoEmbed.src = levels[index].videoUrl;
-  videoEmbed.width = '560'; // Adjust the width as needed
-  videoEmbed.height = '315'; // Adjust the height as needed
-  videoEmbed.allowFullscreen = true;
+  // Get the video ID from the video URL
+  var videoId = extractVideoId(levels[index].videoUrl);
 
-  // Get the popup video element
-  var popupVideo = document.getElementById('popup-video');
+  // Create the iframe element for the embedded video
+  var iframe = document.createElement('iframe');
+  iframe.src = 'https://www.youtube.com/embed/' + videoId;
+  iframe.width = '560';
+  iframe.height = '315';
+  iframe.frameborder = '0';
+  iframe.allowfullscreen = true;
+  iframe.style.border = 'none';
+  iframe.style.borderRadius = "10px";
+
+  // Get the popup element
+  var popup = document.getElementById('popup');
 
   // Clear the existing content of 'popup-video'
+  var popupVideo = document.getElementById('popup-video');
   popupVideo.innerHTML = '';
 
-  // Append the video embed to the popup video
-  popupVideo.appendChild(videoEmbed);
+  // Append the iframe to the popup video
+  popupVideo.appendChild(iframe);
 
   // Populate the popup with the corresponding information
   document.getElementById('popup-name').textContent = levels[index].name;
@@ -86,6 +93,13 @@ listItem.addEventListener('click', function() {
 document.getElementById('popup-close').addEventListener('click', function() {
   var popup = document.getElementById('popup');
   popup.classList.remove('visible');
+
+  // Get the iframe element
+  var iframe = document.getElementById('popup-video').querySelector('iframe');
+
+  // Pause the video and reset the source
+  iframe.contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*');
+  iframe.src = '';
 });
 
   function extractVideoId(url) {
