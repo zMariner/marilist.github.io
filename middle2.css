@@ -195,7 +195,7 @@ body {
 .popup-content {
   background: #1d1d1d;
   color: #ffffff;
-  padding: 30px 100px;
+  padding: 30px 0px;
   border-radius: 8px;
   text-align: center;
   position: relative;
