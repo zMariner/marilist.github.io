@@ -4,7 +4,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
   padding-left: 32px;
   margin-left: 0px;
   background: linear-gradient(to bottom, #0c0c0c, #181818);
@@ -15,13 +14,11 @@ body {
 .middle {
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Center vertically */
-  align-items: center; /* Center horizontally */
   gap: 16px;
   max-width: 928px;
   width: 200%;
   padding: 0px; /* Add padding as needed */
-  margin-left: 100px;
+  margin-left: 30px;
   margin-top: 90px;
 }
 
@@ -97,42 +94,63 @@ body {
   .list-info {
     flex: 1;
     padding: 16px 16px;
-    display: flex;
-    flex-direction: column;
+    /* remove display: none; */
+    flex-direction: row-reverse;
     row-gap: 10px;
   }
   
   .level-info {
+    display: none; /* add this line */
+    flex: 1;
+    align-items: normal;
+  }
+  
+  .list-item {
+    /* Keep only necessary styles */
     display: flex;
-    align-items: bottom;
-    column-gap: 16px;
+    align-items: center;
+    padding: 0 16px;
+    box-sizing: border-box;
+    transition: filter 0.5s, transform 0.5s;
+    animation-name: loadingAnim;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+    box-shadow: 0px 0px 2px 2px rgba(255, 255, 255, 0.01);
+    border: 4px solid #202020;
   }
   
   .level-name {
     color: #c9c9c9;
-    font-size: 28px;
+    font-size: 38px;
     font-weight: 600;
     transition: color 0.25s;
-    padding: 8px 0px;
-    margin-bottom: 0px;
+    margin: 0; /* Add this line */
+    align-items: center;
   }
   
+  .popup-content {
+    /* Add necessary styles */
+    display: flex;
+    font-weight: bold; /* Add font-weight: bold; for bold text */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #1d1d1d;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    position: relative;
+  }  
+
   .level-id,
   .level-author,
   .level-beaten {
-    margin-top: -10px;
-    margin-bottom: 30px;
+    margin-top: 0px;
+    margin-bottom: 0px; /* Decrease this value */
     flex: 1;
     color: #c4c4c4;
     font-size: 18px;
-  }
-  
-  .level-id:hover {
-    cursor: pointer;
-  }
-  
-  .level-id {
-    user-select: all;
   }
   
   .level-id:before,
@@ -155,3 +173,85 @@ body {
   .level-beaten:before {
     content: "Beaten on\a";
   }
+
+  /* Styles for the popup */
+.popup-container {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 3;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.5s;
+  animation-name: loadingAnim;
+  animation-duration: .5s;
+  animation-timing-function: ease-in-out;
+}
+
+.popup-content {
+  background: #1d1d1d;
+  color: #ffffff;
+  padding: 20px 350px;
+  border-radius: 8px;
+  text-align: center;
+  position: relative;
+  transition: transform 0.5s;
+  animation-name: loadingAnim;
+  animation-duration: .5s;
+  animation-timing-function: ease-in-out;
+}
+
+.popup-title {
+  font-size: 0px;
+  margin-bottom: 0px;
+}
+
+.popup-info {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.popup-close {
+  background-color: #141414;
+  color: rgb(221, 221, 221);
+  padding: 10px 20px;
+  border: 2px solid #c7c7c7;
+  font-weight: bold; /* Add font-weight: bold; for bold text */
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  text-decoration: none;
+  margin-top: 60px;
+  margin-bottom: 20px;
+  transition: transform 0.5s;
+  animation-name: loadingAnim;
+  animation-duration: .5s;
+  animation-timing-function: ease-in-out;
+}
+
+.popup-close:hover {
+  border: 2px solid #636363;
+  background-color: #f2f2f2; /* Change to the desired hover background color */
+  transform: scale(1.05); /* Increase scale on hover (adjust as needed) */
+  color: rgb(5, 5, 5);
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Add transition for smooth color and transform change */
+}
+
+.popup-container {
+  display: flex; /* Add this line */
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  /* rest of your styles */
+}
+
+.popup-container.visible {
+  opacity: 1;
+  visibility: visible;
+}
