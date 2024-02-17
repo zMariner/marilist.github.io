@@ -1,6 +1,7 @@
 window.addEventListener('DOMContentLoaded', function() {
   var levels = [
       { name: '#9 - Firework', id: '75206202', author: 'TrickGMD', Beaten: '20 Oct 2023', videoUrl: 'https://youtu.be/YZAoOEVvK8I', type: 'Level' },
+    { name: '#98 - Bloodlust', id: '42584142', author: 'Knobbelboy', Beaten: '17 Feb 2024', videoUrl: 'www.youtube.com/watch?v=kgtFGxkn_wI', type: 'Level' },
     { name: '#81 - Frozen Cave', id: '68908396', author: 'TrueParadoxTeam', Beaten: '18 Apr 2023', videoUrl: 'https://www.youtube.com/watch?v=J57GlLpUbRg', type: 'Level' },
     { name: '#90 - Wasureta', id: '64658786', author: 'HelpegasuS', Beaten: '14 Mar 2023', videoUrl: 'https://www.youtube.com/watch?v=K5FK2kOptzI', type: 'Level' },
     { name: '#N/A - Ruler of Everything', id: '83204544', author: 'ASBCHazel', Beaten: '2 Nov 2023', videoUrl: 'https://www.youtube.com/watch?v=yyzWFa0zoVc', type: 'Level' },
@@ -9,7 +10,9 @@ window.addEventListener('DOMContentLoaded', function() {
     { name: '#NDW - Shitty Minusdry', id: '90383862', author: 'Wiktor and Mystix', Beaten: '29 Apr 2023', videoUrl: 'https://www.youtube.com/watch?v=yd3RoTdunJo', type: 'Level' },
     { name: '#261 - Bloodbath', id: '10565740', author: 'Riot', Beaten: '23 Aug 2022', videoUrl: 'https://www.youtube.com/watch?v=W8cPS8VTZp0', type: 'Level' },
     { name: '#325 - Prismatic Haze', id: '59899374', author: 'Cirtrax', Beaten: '30 Mar 2023', videoUrl: 'https://www.youtube.com/watch?v=McXMhw1kafg', type: 'Level' },
+    { name: '#N/A - ZOOOOOOOOOOOOOOOOOOM', id: '93916671', author: 'Awesomeme360', Beaten: '10 Feb 2024', videoUrl: 'https://www.youtube.com/watch?v=f9PcgDLqp-w', type: 'Level' },
     { name: '#N/A - Shukufuku', id: '93916671', author: 'Joker179114', Beaten: '14 Dec 2023', videoUrl: 'https://youtu.be/wqMrlZlwXRs', type: 'Level' },
+    { name: '#475 - Allegiance', id: '20761188', author: 'Nikroplays', Beaten: '4 Feb 2024', videoUrl: 'https://www.youtube.com/watch?v=Y7ptSSsMr1M', type: 'Level' },
     { name: '#N/A - Gunslinga Corridor', id: '58069223', author: 'zEvilPrisma', Beaten: '10 Nov 2023', videoUrl: 'https://youtu.be/30ZLPEsNatM', type: 'Level' },
     { name: '#347 - Cataclysm', id: '3979721', author: 'Ggb0y', Beaten: '2 Aug 2022', videoUrl: 'https://www.youtube.com/watch?v=0r-7XShVfeg', type: 'Level' },
     { name: '#N/A - Acu', id: '61079355', author: 'Neigefeu', Beaten: '27 Dec 2022', videoUrl: 'https://www.youtube.com/watch?v=uraoLJbRsfk', type: 'Level' },
