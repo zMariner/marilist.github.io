@@ -5,6 +5,7 @@ window.addEventListener('DOMContentLoaded', function() {
     { name: '#81 - Frozen Cave', id: '68908396', author: 'TrueParadoxTeam', Beaten: '18 Apr 2023', videoUrl: 'https://www.youtube.com/watch?v=J57GlLpUbRg', type: 'Level' },
     { name: '#90 - Wasureta', id: '64658786', author: 'HelpegasuS', Beaten: '14 Mar 2023', videoUrl: 'https://www.youtube.com/watch?v=K5FK2kOptzI', type: 'Level' },
     { name: '#N/A - Ruler of Everything', id: '83204544', author: 'ASBCHazel', Beaten: '2 Nov 2023', videoUrl: 'https://www.youtube.com/watch?v=yyzWFa0zoVc', type: 'Level' },
+    { name: '#383 - Blade of Justice', id: '35448603', author: 'Manix648', Beaten: '3 Mar 2024', videoUrl: 'https://www.youtube.com/watch?v=qYl59iCkpvY', type: 'Level' },
     { name: '#248 - Dolos', id: '58417850', author: 'Enzeux', Beaten: '1 Apr 2023', videoUrl: 'https://www.youtube.com/watch?v=iscKMHv-Lsk', type: 'Level' },
     { name: '#N/A - Moment', id: '68848817', author: 'lexycat', Beaten: '22 Oct 2023', videoUrl: 'https://www.youtube.com/watch?v=O6N_7RZsogc', type: 'Level' },
     { name: '#NDW - Shitty Minusdry', id: '90383862', author: 'Wiktor and Mystix', Beaten: '29 Apr 2023', videoUrl: 'https://www.youtube.com/watch?v=yd3RoTdunJo', type: 'Level' },
