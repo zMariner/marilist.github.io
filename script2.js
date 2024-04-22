@@ -1,9 +1,13 @@
 window.addEventListener('DOMContentLoaded', function() {
   var levels = [
+    { name: 'Unnamed 0', id: '81660662', author: 'Mariner', Beaten: '22 Apr 2024', videoUrl: 'https://youtu.be/y9KIE_D9Rxo', type: 'Challenge' },
+    { name: 'Throwing Flashbang', id: '101576176', author: 'Mariner', Beaten: '26 Feb 2024', videoUrl: 'https://youtu.be/Alr4rs1Ug3g?si=HWFW2Zq1w1ADckNy', type: 'Challenge' },
+    { name: 'Dantes Inferno', id: '99683393', author: 'Mariner', Beaten: '24 Jan 2024', videoUrl: 'https://www.youtube.com/watch?v=eq6PGWcyUSg', type: 'Challenge' },
     { name: 'Acheloos', id: '93991257', author: 'Mariner', Beaten: '31 Aug 2023', videoUrl: 'https://www.youtube.com/watch?v=v38Lpv_8Hmk', type: 'Challenge' },
     { name: 'Banana Beater', id: '91149251', author: 'Smickalv', Beaten: '15 Aug 2023', videoUrl: 'https://www.youtube.com/watch?v=x1-Udnf1kVw', type: 'Challenge' },
     { name: 'Under Heroine I', id: '92182309', author: 'Mariner', Beaten: '6 Jul 2023', videoUrl: 'https://www.youtube.com/watch?v=4cK_ZNj7D7c', type: 'Challenge' },
     { name: 'The Xylz Trials', id: '90885542', author: 'baconmonke', Beaten: '31 Aug 2023', videoUrl: 'https://www.youtube.com/watch?v=EN5BWf4cMsI', type: 'Challenge' },
+    { name: 'Acheron Noclip 2', id: '98047767', author: 'Mariner', Beaten: '27 Dec 2023', videoUrl: 'https://youtu.be/JAyO3mzq7Yg?si=gEO95bP4LS28ijy6', type: 'Challenge' },
     { name: 'Cave of Lilys', id: '91130171', author: 'WDWiktor', Beaten: '30 May 2023', videoUrl: 'https://youtu.be/6B8mPt69P4I', type: 'Challenge' },
     { name: 'In the End', id: '87989862', author: 'maaaaaaaaaaark2', Beaten: '13 May 2023', videoUrl: 'https://youtu.be/c44KdklvQ1w', type: 'Challenge' }
   ];
