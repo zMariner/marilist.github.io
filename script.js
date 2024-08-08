@@ -2,6 +2,7 @@ window.addEventListener('DOMContentLoaded', function() {
   var levels = [
       { name: '#9 - Firework', id: '75206202', author: 'TrickGMD', Beaten: '20 Oct 2023', videoUrl: 'https://youtu.be/YZAoOEVvK8I', type: 'Level' },
     { name: '#27 - UNKNOWN', id: '88203501', author: 'NineDice', Beaten: '23 Jul 2024', videoUrl: 'https://youtu.be/4oLxQ_pw798?si=fbryE57HLeZD0tIf', type: 'Level' },
+    { name: '#70 - Renevant', id: '58161496', author: 'Nikrodox', Beaten: '2 Aug 2024', videoUrl: 'https://youtu.be/aS4c2wqBWWk?si=MrwZU_xUTChHPyhj', type: 'Level' },
     { name: '#79 - RUST', id: '71912451', author: 'Neigefeu', Beaten: '7 May 2024', videoUrl: 'https://youtu.be/RnPaj1vjTDM?si=6GdUMw56IRg-xRAh', type: 'Level' },
     { name: '#98 - Bloodlust', id: '42584142', author: 'Knobbelboy', Beaten: '17 Feb 2024', videoUrl: 'www.youtube.com/watch?v=kgtFGxkn_wI', type: 'Level' },
     { name: '#81 - Frozen Cave', id: '68908396', author: 'TrueParadoxTeam', Beaten: '18 Apr 2023', videoUrl: 'https://www.youtube.com/watch?v=J57GlLpUbRg', type: 'Level' },
