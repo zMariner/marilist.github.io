@@ -16,7 +16,7 @@ window.addEventListener('DOMContentLoaded', function() {
     { name: '#NDW - Shitty Minusdry', id: '90383862', author: 'Wiktor and Mystix', Beaten: '29 Apr 2023', videoUrl: 'https://www.youtube.com/watch?v=yd3RoTdunJo', type: 'Level' },
     { name: '#261 - Bloodbath', id: '10565740', author: 'Riot', Beaten: '23 Aug 2022', videoUrl: 'https://www.youtube.com/watch?v=W8cPS8VTZp0', type: 'Level' },
     { name: '#325 - Prismatic Haze', id: '59899374', author: 'Cirtrax', Beaten: '30 Mar 2023', videoUrl: 'https://www.youtube.com/watch?v=McXMhw1kafg', type: 'Level' },
-    { name: '#N/A - ZOOOOOOOOOOOOOOOOOOM', id: '93916671', author: 'Awesomeme360', Beaten: '10 Feb 2024', videoUrl: 'https://www.youtube.com/watch?v=f9PcgDLqp-w', type: 'Level' },
+    { name: '#N/A - ZOOO...OOOM', id: '93916671', author: 'Awesomeme360', Beaten: '10 Feb 2024', videoUrl: 'https://www.youtube.com/watch?v=f9PcgDLqp-w', type: 'Level' },
     { name: '#N/A - Shukufuku', id: '93916671', author: 'Joker179114', Beaten: '14 Dec 2023', videoUrl: 'https://youtu.be/wqMrlZlwXRs', type: 'Level' },
     { name: '#475 - Allegiance', id: '20761188', author: 'Nikroplays', Beaten: '4 Feb 2024', videoUrl: 'https://www.youtube.com/watch?v=Y7ptSSsMr1M', type: 'Level' },
     { name: '#N/A - Gunslinga Corridor', id: '58069223', author: 'zEvilPrisma', Beaten: '10 Nov 2023', videoUrl: 'https://youtu.be/30ZLPEsNatM', type: 'Level' },
