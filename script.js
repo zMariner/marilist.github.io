@@ -2,6 +2,9 @@ window.addEventListener('DOMContentLoaded', function() {
   var levels = [
       { name: '#9 - Firework', id: '75206202', author: 'TrickGMD', Beaten: '20 Oct 2023', videoUrl: 'https://youtu.be/YZAoOEVvK8I', type: 'Level' },
     { name: '#27 - UNKNOWN', id: '88203501', author: 'NineDice', Beaten: '23 Jul 2024', videoUrl: 'https://youtu.be/4oLxQ_pw798?si=fbryE57HLeZD0tIf', type: 'Level' },
+    { name: '#47 - Shukketsu', id: '75286957', author: 'zYuko', Beaten: '18 Sep 2024', videoUrl: 'https://youtu.be/7XHFfPqEFcc?si=O6C0Z92lH4zWOFcx', type: 'Level' },
+    { name: '#55 - Zodiac', id: '52374843', author: 'Bianox', Beaten: '22 Sep 2024', videoUrl: 'https://youtu.be/2MPRWSlJ0Fw', type: 'Level' },
+    { name: '#70 - Promethean', id: '69333212', author: 'Endlevel', Beaten: '29 Aug 2024', videoUrl: 'https://youtu.be/rTvUNXdcot8', type: 'Level' },
     { name: '#66 - SUPERHATEMEWORLD', id: '57571983', author: 'icedcave', Beaten: '18 Aug 2024', videoUrl: 'https://youtu.be/uYoY8guBbnw?si=X5GN73KapzN02N4_', type: 'Level' },
     { name: '#70 - Renevant', id: '58161496', author: 'Nikrodox', Beaten: '2 Aug 2024', videoUrl: 'https://youtu.be/aS4c2wqBWWk?si=MrwZU_xUTChHPyhj', type: 'Level' },
     { name: '#79 - RUST', id: '71912451', author: 'Neigefeu', Beaten: '7 May 2024', videoUrl: 'https://youtu.be/RnPaj1vjTDM?si=6GdUMw56IRg-xRAh', type: 'Level' },
