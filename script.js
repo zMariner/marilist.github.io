@@ -1,7 +1,7 @@
 window.addEventListener('DOMContentLoaded', function() {
   var levels = [
-    { name: '#19 - Saul Goodman', id: '90477539', author: 'Renn241', Beaten: '23 Oct 2024', videoUrl: 'https://youtu.be/_SVLhLydIcw', type: 'Level' },
     { name: '#9 - Firework', id: '75206202', author: 'TrickGMD', Beaten: '20 Oct 2023', videoUrl: 'https://youtu.be/YZAoOEVvK8I', type: 'Level' },
+    { name: '#19 - Saul Goodman', id: '90477539', author: 'Renn241', Beaten: '23 Oct 2024', videoUrl: 'https://youtu.be/_SVLhLydIcw', type: 'Level' },
     { name: '#47 - Verdant Landscape', id: '76543324', author: 'Nisha', Beaten: '18 Nov 2024', videoUrl: 'https://www.youtube.com/watch?v=GabY3GWyUk4', type: 'Level' },
     { name: '#27 - UNKNOWN', id: '88203501', author: 'NineDice', Beaten: '23 Jul 2024', videoUrl: 'https://youtu.be/4oLxQ_pw798?si=fbryE57HLeZD0tIf', type: 'Level' },
     { name: '#47 - Shukketsu', id: '75286957', author: 'zYuko', Beaten: '18 Sep 2024', videoUrl: 'https://youtu.be/7XHFfPqEFcc?si=O6C0Z92lH4zWOFcx', type: 'Level' },
