@@ -43,8 +43,25 @@ window.addEventListener('DOMContentLoaded', function() {
   var challengeList = document.getElementById('challengeList');
 
   levels.forEach(function(level, index) {
+    // Create a container for each level
+    var listItemContainer = document.createElement('div');
+    listItemContainer.className = 'list-item-container';
+
+    // Create the list item
     var listItem = document.createElement('div');
     listItem.classList.add('list-item');
+    
+    // Add rank class
+    if (index === 0) listItem.classList.add('rank-1');
+    if (index === 1) listItem.classList.add('rank-2');
+    if (index === 2) listItem.classList.add('rank-3');
+
+    // Extract position from name (e.g., "#9 -" -> "9")
+    var position = level.name.match(/#(\d+)/);
+    if (position) {
+      listItem.setAttribute('data-position', position[1]);
+    }
+
     var listNumber = document.createElement('div');
     listNumber.classList.add('list-number');
     listNumber.textContent = '#' + (index + 1);
@@ -71,56 +88,40 @@ window.addEventListener('DOMContentLoaded', function() {
     listItem.appendChild(listNumber);
     listItem.appendChild(listThumbnail);
     listItem.appendChild(listInfo);
-    levelList.appendChild(listItem);
+    listItemContainer.appendChild(listItem);
+    levelList.appendChild(listItemContainer);
 
-  
-// Display the popup
-listItem.addEventListener('click', function() {
-  // Get the video ID from the video URL
-  var videoId = extractVideoId(levels[index].videoUrl);
+    // Display the popup
+    listItem.addEventListener('click', function() {
+      // Get the video ID from the video URL
+      var videoId = extractVideoId(levels[index].videoUrl);
 
-  // Create the iframe element for the embedded video
-  var iframe = document.createElement('iframe');
-  iframe.src = 'https://www.youtube.com/embed/' + videoId;
-  iframe.width = '560';
-  iframe.height = '315';
-  iframe.frameborder = '0';
-  iframe.allowfullscreen = true;
-  iframe.style.border = 'none';
-  iframe.style.borderRadius = "10px";
+      // Set the iframe source
+      var iframe = document.getElementById('popup-video-frame');
+      iframe.src = 'https://www.youtube.com/embed/' + videoId;
 
-  // Get the popup element
-  var popup = document.getElementById('popup');
+      // Populate the popup with the corresponding information
+      document.getElementById('popup-name').textContent = levels[index].name;
+      document.getElementById('popup-id').textContent = levels[index].id;
+      document.getElementById('popup-author').textContent = levels[index].author;
+      document.getElementById('popup-beaten').textContent = levels[index].Beaten;
 
-  // Clear the existing content of 'popup-video'
-  var popupVideo = document.getElementById('popup-video');
-  popupVideo.innerHTML = '';
+      // Display the popup
+      document.getElementById('popup').style.display = 'flex';
+    });
 
-  // Append the iframe to the popup video
-  popupVideo.appendChild(iframe);
+    // Close the popup when the close button is clicked
+    document.getElementById('popup-close').addEventListener('click', function() {
+      var popup = document.getElementById('popup');
+      popup.style.display = 'none';
 
-  // Populate the popup with the corresponding information
-  document.getElementById('popup-name').textContent = levels[index].name;
-  document.getElementById('popup-id').textContent = levels[index].id;
-  document.getElementById('popup-author').textContent = levels[index].author;
-  document.getElementById('popup-beaten').textContent = levels[index].Beaten;
+      // Get the iframe element
+      var iframe = document.getElementById('popup-video-frame');
 
-  // Display the popup
-  popup.classList.add('visible');
-});
-
-// Close the popup when the close button is clicked
-document.getElementById('popup-close').addEventListener('click', function() {
-  var popup = document.getElementById('popup');
-  popup.classList.remove('visible');
-
-  // Get the iframe element
-  var iframe = document.getElementById('popup-video').querySelector('iframe');
-
-  // Pause the video and reset the source
-  iframe.contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*');
-  iframe.src = '';
-});
+      // Reset the iframe source to stop the video
+      iframe.src = '';
+    });
+  });
 
   function extractVideoId(url) {
     var match = url.match(/(?:[?&]v=|\/embed\/|\/\d\/|\/vi\/|youtu\.be\/|\/embed\/|\/\d\/|\/vi\/)([^#&?/]+)/i);
@@ -130,4 +131,4 @@ document.getElementById('popup-close').addEventListener('click', function() {
       return '';
     }
   }
-})});
+});

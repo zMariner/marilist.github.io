@@ -17,9 +17,9 @@
       top: 0;
       left: 0;
       width: 100%; /* Full width of the screen */
-      background: linear-gradient(to top, #0c0c0c, #181818);
+      background: linear-gradient(to top, #060606, #040404);
       padding: 15px;
-      box-shadow: 0px 0px 12px 12px rgba(0, 0, 0, 0.5);
+      box-shadow: 0px 0px 22px 22px rgba(0, 0, 0, 0.5);
       box-sizing: border-box;
       display: inline-flex;
       justify-content: center; /* Align content horizontally */
@@ -28,8 +28,8 @@
     }
 
     .text-box {
-  background: #1d1d1d;
-  color: #0e0e0e;
+  background: #000000;
+  color: #121212;
   padding: 0px;
   z-index: 3;
   width: 100%;
@@ -43,71 +43,36 @@
       position: relative; /* Add relative positioning to allow the content to be behind the sidebar */
       z-index: 1; /* Set a lower z-index to ensure content is behind the sidebar */
     }
-
-    .challenges-button,
-    .levels-button {
-      background-color: #141414;
-      color: rgb(221, 221, 221);
-      padding: 10px 20px;
-      border: 2px solid #c7c7c7;
-      border-radius: 4px;
-      font-size: 16px;
-      cursor: pointer;
-      text-align: center;
-      font-family: Arial, sans-serif; /* Change the font family as needed */
-      text-decoration: none; /* Remove underline */
-      transition: background-color 0.3s ease, transform 0.3s ease; /* Add transition for smooth color and transform change */
-      font-weight: bold; /* Add font-weight: bold; for bold text */
-      display: block;
-      margin-bottom: 0px;
-      margin-left: 20px;
-      margin-right: 20px;
-      box-shadow: 0px 0px 3px 3px rgba(102, 102, 102, 0);
-    }
-
-    .challenges-button:hover,
-    .info-button:hover,
-    .levels-button:hover {
-      border: 2px solid #636363;
-      background-color: #f2f2f2; /* Change to the desired hover background color */
-      transform: scale(1.05); /* Increase scale on hover (adjust as needed) */
-      color: rgb(5, 5, 5);
-    }
-
-    .challenges-button:focus,
-    .info-button:focus,
-    .levels-button:focus {
-      outline: none;
-    }
   </style>
 </head>
 <body>
-  <!-- Widget Container -->
-  <div class="widget-container">
-    <iframe src="https://discord.com/widget?id=901414769691623464&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
-  </div>
   <div class="popup-container" id="popup">
     <div class="popup-content">
-      <h2 class="popup-title">Level Details</h2>
-      <p class="popup-info"><a id="popup-video" target="_blank">Watch on YouTube</a></p>
-      <p class="popup-info"><span id="popup-name"></span></p>
-      <p class="popup-info">ID: <span id="popup-id"></span></p>
-      <p class="popup-info">Creator: <span id="popup-author"></span></p>
-      <p class="popup-info">Beaten: <span id="popup-beaten"></span></p>
+      <div class="popup-info-container">
+        <h2 class="popup-title">Level Details</h2>
+        <p class="popup-info">Name: <span id="popup-name"></span></p>
+        <p class="popup-info">ID: <span id="popup-id"></span></p>
+        <p class="popup-info">Creator: <span id="popup-author"></span></p>
+        <p class="popup-info">Beaten: <span id="popup-beaten"></span></p>
+      </div>
+      <div class="popup-video-container">
+        <iframe id="popup-video-frame" width="100%" height="450" frameborder="0" allowfullscreen></iframe>
+      </div>
       <button class="popup-close" id="popup-close">Close</button>
     </div>
   </div>
   <div class="sidebar">
-    <a href="levels.html" class="levels-button">Levels</a>
-    <a href="challenges.html" class="challenges-button">Challenges</a>
   </div>
   <div class="content">
     <div class="middle" id="levelList">
       <!-- Your existing content goes here -->
     </div>
+    <div class="discord-widget">
+      <iframe src="https://discord.com/widget?id=901414769691623464&theme=dark" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+    </div>
   </div>
   <div class="text-box">
-    <p>©Mariner 2023</p>
+    <p>Mariner 2023</p>
   </div>
 </body>
 </html>
