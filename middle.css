@@ -77,7 +77,7 @@ body {
   .list-thumbnail {
     display: flex;
     justify-content: center;
-    width: 270px;
+    width: 370px;
     overflow: hidden;
     border: none;
     margin-left: -30px; /* Add negative margin-left to move the thumbnail 10 pixels to the left */
