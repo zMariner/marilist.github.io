@@ -9,8 +9,7 @@ window.addEventListener('DOMContentLoaded', function() {
     { name: '#??? - ???', id: 'N/A', author: 'N/A', Beaten: 'N/A', videoUrl: 'https://youtu.be/I27TjqthWco', type: 'Level' },
     { name: '#??? - ???', id: 'N/A', author: 'N/A', Beaten: 'N/A', videoUrl: 'https://youtu.be/I27TjqthWco', type: 'Level' },
     { name: '#??? - ???', id: 'N/A', author: 'N/A', Beaten: 'N/A', videoUrl: 'https://youtu.be/I27TjqthWco', type: 'Level' },
-    { name: '#??? - ???', id: 'N/A', author: 'N/A', Beaten: 'N/A', videoUrl: 'https://youtu.be/I27TjqthWco', type: 'Level' },
-    { name: '#10 - GRIM', id: '90477539', author: 'NucDev', Beaten: '23 Oct 2099', videoUrl: 'https://www.youtube.com/watch?v=oS4DPqHwP6w', type: 'Level' }
+    { name: '#??? - Anathema', id: '112313819', author: 'Nikrodox', Beaten: 'N/A', videoUrl: 'https://youtu.be/n5j2qtDMs98', type: 'Level' }
   ];
 
   var levelList = document.getElementById('levelList');
