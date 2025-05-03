@@ -23,17 +23,6 @@ window.addEventListener('DOMContentLoaded', function() {
     // Create the list item
     var listItem = document.createElement('div');
     listItem.classList.add('list-item');
-    
-    // Add rank class
-    if (index === 0) listItem.classList.add('rank-1');
-    if (index === 1) listItem.classList.add('rank-2');
-    if (index === 2) listItem.classList.add('rank-3');
-
-    // Extract position from name (e.g., "#9 -" -> "9")
-    var position = level.name.match(/#(\d+)/);
-    if (position) {
-      listItem.setAttribute('data-position', position[1]);
-    }
 
     var listNumber = document.createElement('div');
     listNumber.classList.add('list-number');
