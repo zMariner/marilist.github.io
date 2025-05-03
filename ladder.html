@@ -1,7 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <link rel="stylesheet" href="laddermiddle.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mariner's List - Ladder</title>
+  <link rel="stylesheet" href="middle.css">
   <link rel="stylesheet" href="widget.css">
   <script src="scriptladder.js"></script>
   <style>
@@ -24,18 +27,18 @@
       display: inline-flex;
       justify-content: center; /* Align content horizontally */
       z-index: 4; /* Set a higher z-index to make it appear on top */
-      margin-bottom: 00px; /* Add a margin to the bottom to separate it from the content */
+      margin-bottom: 0; /* Corrected margin to be a number */
     }
 
     .text-box {
-  background: #000000;
-  color: #121212;
-  padding: 0px;
-  z-index: 3;
-  width: 100%;
-  margin: 00px; /* Add margin to all sides */
-  text-align: center; /* Align the text to the right */
-}
+      background: #000000;
+      color: #121212;
+      padding: 0px;
+      z-index: 3;
+      width: 100%;
+      margin: 0; /* Corrected margin to be a number */
+      text-align: center; /* Align the text to the center */
+    }
 
     .content {
       flex: 1;
@@ -57,7 +60,7 @@
         <button class="popup-close" id="popup-close">X</button>
       </div>
       <div class="popup-video-container">
-        <iframe id="popup-video-frame" width="100%" height="450" frameborder="0" allowfullscreen></iframe>
+        <iframe id="popup-video-frame" width="100%" height="450" frameborder="0" allowfullscreen title="Level Video"></iframe>
       </div>
     </div>
   </div>
@@ -65,15 +68,15 @@
     <button onclick="window.location.href='levels.html'">Go to List</button>
   </div>
   <div class="content">
-    <div class="laddermiddle" id="levelList">
+    <div class="middle" id="levelList">
       <!-- Your existing content goes here -->
     </div>
     <div class="discord-widget">
-      <iframe src="https://discord.com/widget?id=901414769691623464&theme=dark" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+      <iframe src="https://discord.com/widget?id=901414769691623464&theme=dark" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts" title="Discord Widget"></iframe>
     </div>
   </div>
   <div class="text-box">
-    <p>Mariner 2023</p>
+    <p>©Mariner 2025</p>
   </div>
 </body>
 </html>
