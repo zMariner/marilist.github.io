@@ -2,8 +2,8 @@ window.addEventListener('DOMContentLoaded', function() {
   var levels = [
     { name: '#19 - Poocubed', id: '85133223', author: 'Liisp', Beaten: '15 Mar 2025', videoUrl: 'https://youtu.be/ms5xPzWFNYQ?si=Imxl9Zd43-27uHvG', type: 'Level' },
     { name: '#29 - Combustion', id: '94359172', author: 'Cersia', Beaten: '29 Apr 2025', videoUrl: 'https://youtu.be/7CN82T7zdvI', type: 'Level' },
-    { name: '#72 - Trueffet', id: '71434979', author: 'SyQual', Beaten: '10 May 2025', videoUrl: 'https://youtu.be/9R5JbhMtULg', type: 'Level' },
-    { name: '#??? - ???', id: 'N/A', author: 'N/A', Beaten: 'N/A', videoUrl: 'https://youtu.be/SLsmQYwvoy4', type: 'Level' },
+    { name: '#72 - Trueffet', id: '71434979', author: 'SyQual', Beaten: '10 May 2025', videoUrl: 'https://youtu.be/8q56KPTFlok', type: 'Level' },
+    { name: '#??? - Menace', id: '107805281', author: 'ManneyHeffley', Beaten: 'N/A', videoUrl: 'https://youtu.be/F57oMCkiWz4', type: 'Level' },
     { name: '#??? - ???', id: 'N/A', author: 'N/A', Beaten: 'N/A', videoUrl: 'https://youtu.be/I27TjqthWco', type: 'Level' },
     { name: '#??? - ???', id: 'N/A', author: 'N/A', Beaten: 'N/A', videoUrl: 'https://youtu.be/I27TjqthWco', type: 'Level' },
     { name: '#??? - ???', id: 'N/A', author: 'N/A', Beaten: 'N/A', videoUrl: 'https://youtu.be/I27TjqthWco', type: 'Level' },
@@ -46,7 +46,11 @@ window.addEventListener('DOMContentLoaded', function() {
     var levelName = document.createElement('p');
     levelName.classList.add('level-name');
     levelName.textContent = level.name;
+    var levelCreator = document.createElement('p');
+    levelCreator.classList.add('level-creator');
+    levelCreator.textContent = 'by ' + level.author;
     listInfo.appendChild(levelName);
+    listInfo.appendChild(levelCreator); 
     listItem.appendChild(listNumber);
     listItem.appendChild(listThumbnail);
     listItem.appendChild(listInfo);
