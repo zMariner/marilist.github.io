@@ -25,8 +25,11 @@ body {
   display: flex;
   align-items: center;
   gap: 42px;
-  width: 100%;
+  width: clamp(1000px, 90%, 1800px);
+  max-width: 1800px;
+  margin: 0 auto;
 }
+
 
 .list-number {
   color: #f0f0f0;
@@ -59,6 +62,9 @@ body {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
   border: 2px solid #2a2a2a;
   border-radius: 10px;
+  width: clamp(1000px, 90%, 1800px) !important;
+  max-width: 1800px;
+  margin: 0 auto;
 }
 
 .list-item:hover {
@@ -155,9 +161,24 @@ body {
   color: #ffffff;
   font-size: clamp(24px, 3vw, 42px);
   font-weight: 1000;
-  margin: 0 0 8px 20px;
+  margin: 0 0 4px 20px;
   line-height: 1.2;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  transition: color 0.3s ease;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%; /* Use full width of parent */
+  max-width: 1200px; /* Increased maximum width for longer names */
+}
+
+/* Add new creator name style */
+.level-creator {
+  color: #b0b0b0;
+  font-size: clamp(12px, 1vw, 16px);
+  font-weight: 400;
+  margin: 0 0 10px 20px;
+  line-height: 1.2;
   transition: color 0.3s ease;
   white-space: nowrap;
   overflow: hidden;
@@ -435,6 +456,11 @@ body {
   .popup-info span {
     font-size: 18px;
   }
+
+  .list-item, .list-item-container {
+    width: 95% !important;
+    max-width: 95%;
+  }
 }
 
 /* Larger Screen Adjustments */
@@ -485,7 +511,7 @@ body {
 
 .discord-widget iframe {
   width: 900px;
-  height: 300px;
+  height: 500px;
   border: none;
   border-radius: 10px;
   transition: all 0.3s ease;
