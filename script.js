@@ -20,6 +20,7 @@ window.addEventListener('DOMContentLoaded', function() {
     { name: '#90 - Wasureta', id: '64658786', author: 'HelpegasuS', Beaten: '14 Mar 2023', videoUrl: 'https://www.youtube.com/watch?v=K5FK2kOptzI', type: 'Level' },
     { name: '#194 - Sonic Wave', id: '26681070', author: 'lSunix', Beaten: '25 Apr 2024', videoUrl: 'https://www.youtube.com/watch?v=R-HQrQc84AE', type: 'Level' },
     { name: '#N/A - Ruler of Everything', id: '83204544', author: 'ASBCHazel', Beaten: '2 Nov 2023', videoUrl: 'https://www.youtube.com/watch?v=yyzWFa0zoVc', type: 'Level' },
+    { name: '#N/A - Fyrd Up', id: '118543855', author: 'rinjello', Beaten: '29 May 2025', videoUrl: 'https://www.youtube.com/watch?v=0i5o5GFjPoc', type: 'Level' },
     { name: '#383 - Blade of Justice', id: '35448603', author: 'Manix648', Beaten: '3 Mar 2024', videoUrl: 'https://www.youtube.com/watch?v=qYl59iCkpvY', type: 'Level' },
     { name: '#248 - Dolos', id: '58417850', author: 'Enzeux', Beaten: '1 Apr 2023', videoUrl: 'https://www.youtube.com/watch?v=iscKMHv-Lsk', type: 'Level' },
     { name: '#N/A - Moment', id: '68848817', author: 'lexycat', Beaten: '22 Oct 2023', videoUrl: 'https://www.youtube.com/watch?v=O6N_7RZsogc', type: 'Level' },
