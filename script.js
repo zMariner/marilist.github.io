@@ -4,7 +4,7 @@ window.addEventListener('DOMContentLoaded', function() {
     { name: '#21 - Poocubed', id: '85133223', author: 'Liisp', Beaten: '15 Mar 2025', videoUrl: 'https://youtu.be/ms5xPzWFNYQ?si=sA4a05Y2ipeop9kP', type: 'Level' },
     { name: '#19 - Saul Goodman', id: '90477539', author: 'Renn241', Beaten: '23 Oct 2024', videoUrl: 'https://youtu.be/_SVLhLydIcw', type: 'Level' },
     { name: '#29 - Combustion', id: '94359172', author: 'Cersia', Beaten: '29 Apr 2025', videoUrl: 'https://youtu.be/7CN82T7zdvI', type: 'Level' },
-    { name: '#N/A - Menace 47% + 33-92', id: '107805281', author: 'ManneyHeffley', Beaten: '25 Jun 2025', videoUrl: 'https://youtu.be/wxgXa0GoRD8?si=8vmExLXKosvNg_y5', type: 'Level' },
+    { name: '#N/A - Menace 46% + 33-92', id: '107805281', author: 'ManneyHeffley', Beaten: '25 Jun 2025', videoUrl: 'https://youtu.be/wxgXa0GoRD8?si=8vmExLXKosvNg_y5', type: 'Level' },
     { name: '#52 - The Golden', id: '60978746', author: 'BoBoBoBoBoBoBo', Beaten: '15 Feb 2025', videoUrl: 'https://youtu.be/ACAtm--afM4', type: 'Level' },
     { name: '#47 - Verdant Landscape', id: '76543324', author: 'Nisha', Beaten: '18 Nov 2024', videoUrl: 'https://www.youtube.com/watch?v=GabY3GWyUk4', type: 'Level' },
     { name: '#27 - UNKNOWN', id: '88203501', author: 'NineDice', Beaten: '23 Jul 2024', videoUrl: 'https://youtu.be/4oLxQ_pw798?si=fbryE57HLeZD0tIf', type: 'Level' },
