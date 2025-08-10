@@ -1,6 +1,6 @@
 window.addEventListener('DOMContentLoaded', function() {
   var levels = [
-    { name: '#17 - Menace 65%', id: '107805281', author: 'MannyHeffley', Beaten: '4 Aug 2025', videoUrl: 'https://youtu.be/59mbIlyOf1Y', type: 'Level' },
+    { name: '#17 - Menace 85%', id: '107805281', author: 'MannyHeffley', Beaten: '10 Aug 2025', videoUrl: 'https://www.youtube.com/watch?v=lAte8NsMCd0', type: 'Level' },
     { name: '#9 - Firework', id: '75206202', author: 'TrickGMD', Beaten: '20 Oct 2023', videoUrl: 'https://youtu.be/YZAoOEVvK8I', type: 'Level' },
     { name: '#21 - Poocubed', id: '85133223', author: 'Liisp', Beaten: '15 Mar 2025', videoUrl: 'https://youtu.be/ms5xPzWFNYQ?si=sA4a05Y2ipeop9kP', type: 'Level' },
     { name: '#19 - Saul Goodman', id: '90477539', author: 'Renn241', Beaten: '23 Oct 2024', videoUrl: 'https://youtu.be/_SVLhLydIcw', type: 'Level' },
