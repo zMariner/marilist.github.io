@@ -90,8 +90,8 @@ window.addEventListener('DOMContentLoaded', function() {
     levelName.classList.add('level-name');
     levelName.textContent = level.name;
     var levelCreator = document.createElement('p');
-    levelCreator.classList.add('level-creator');
-    levelCreator.textContent = 'by ' + level.author;
+    levelCreator.classList.add('level-creator'); 
+    levelCreator.textContent = 'by ' + level.author; 
     listInfo.appendChild(levelName);
     listInfo.appendChild(levelCreator); 
     listItem.appendChild(listNumber);
