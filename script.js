@@ -4,6 +4,7 @@ window.addEventListener('DOMContentLoaded', function() {
     { name: '#9 - Firework', id: '75206202', author: 'TrickGMD', Beaten: '20 Oct 2023', videoUrl: 'https://youtu.be/YZAoOEVvK8I', type: 'Level' },
     { name: '#21 - Poocubed', id: '85133223', author: 'Liisp', Beaten: '15 Mar 2025', videoUrl: 'https://youtu.be/ms5xPzWFNYQ?si=sA4a05Y2ipeop9kP', type: 'Level' },
     { name: '#19 - Saul Goodman', id: '90477539', author: 'Renn241', Beaten: '23 Oct 2024', videoUrl: 'https://youtu.be/_SVLhLydIcw', type: 'Level' },
+    { name: '#N/A - TrakineS', id: '125788590', author: 'Laranjoo', Beaten: '9 Sep 2025', videoUrl: 'https://youtu.be/oKuoI-_JzKU', type: 'Level' },
     { name: '#29 - Combustion', id: '94359172', author: 'Cersia', Beaten: '29 Apr 2025', videoUrl: 'https://youtu.be/7CN82T7zdvI', type: 'Level' },
     { name: '#52 - The Golden', id: '60978746', author: 'BoBoBoBoBoBoBo', Beaten: '15 Feb 2025', videoUrl: 'https://youtu.be/ACAtm--afM4', type: 'Level' },
     { name: '#47 - Verdant Landscape', id: '76543324', author: 'Nisha', Beaten: '18 Nov 2024', videoUrl: 'https://www.youtube.com/watch?v=GabY3GWyUk4', type: 'Level' },
