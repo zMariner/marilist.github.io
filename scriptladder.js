@@ -12,6 +12,8 @@ window.addEventListener('DOMContentLoaded', function() {
     { name: '#??? - Anathema', id: '112313819', author: 'Nikrodox', Beaten: 'N/A', videoUrl: 'https://youtu.be/n5j2qtDMs98', type: 'Level' }
   ];
 
+// empty comment
+  
   var levelList = document.getElementById('levelList');
   var challengeList = document.getElementById('challengeList');
 
