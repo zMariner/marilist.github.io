@@ -4,7 +4,7 @@ window.addEventListener('DOMContentLoaded', function() {
     { name: '#29 - Combustion', id: '94359172', author: 'Cersia', Beaten: '29 Apr 2025', videoUrl: 'https://youtu.be/7CN82T7zdvI', type: 'Level' },
     { name: '#72 - Trueffet', id: '71434979', author: 'SyQual', Beaten: '10 May 2025', videoUrl: 'https://youtu.be/8q56KPTFlok', type: 'Level' },
     { name: '#12 - Menace', id: '107805281', author: 'MannyHeffley', Beaten: '31 Aug 2025', videoUrl: 'https://youtu.be/ProNF02JXsk', type: 'Level' },
-    { name: '#??? - ???', id: 'N/A', author: 'N/A', Beaten: 'N/A', videoUrl: 'https://youtu.be/Hz-ya2pSYMQ', type: 'Level' },
+    { name: '#??? - Edge of Destiny', id: '89187968', author: 'CDMusic', Beaten: 'N/A', videoUrl: 'https://youtu.be/RuzvsDzRoxs', type: 'Level' },
     { name: '#??? - ???', id: 'N/A', author: 'N/A', Beaten: 'N/A', videoUrl: 'https://youtu.be/I27TjqthWco', type: 'Level' },
     { name: '#??? - ???', id: 'N/A', author: 'N/A', Beaten: 'N/A', videoUrl: 'https://youtu.be/I27TjqthWco', type: 'Level' },
     { name: '#??? - ???', id: 'N/A', author: 'N/A', Beaten: 'N/A', videoUrl: 'https://youtu.be/I27TjqthWco', type: 'Level' },
