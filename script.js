@@ -10,6 +10,7 @@ window.addEventListener('DOMContentLoaded', function() {
     { name: '#52 - The Golden', id: '60978746', author: 'BoBoBoBoBoBoBo', Beaten: '15 Feb 2025', videoUrl: 'https://youtu.be/ACAtm--afM4', type: 'Level' },
     { name: '#47 - Verdant Landscape', id: '76543324', author: 'Nisha', Beaten: '18 Nov 2024', videoUrl: 'https://www.youtube.com/watch?v=GabY3GWyUk4', type: 'Level' },
     { name: '#27 - UNKNOWN', id: '88203501', author: 'NineDice', Beaten: '23 Jul 2024', videoUrl: 'https://youtu.be/4oLxQ_pw798?si=fbryE57HLeZD0tIf', type: 'Level' },
+    { name: '#33 - MINUSdry', id: '89414220', author: 'CDMusic', Beaten: '27 Oct 2025', videoUrl: 'https://www.youtube.com/watch?v=yusak3x0Dwo', type: 'Level' },
     { name: '#47 - Shukketsu', id: '75286957', author: 'zYuko', Beaten: '18 Sep 2024', videoUrl: 'https://youtu.be/7XHFfPqEFcc?si=O6C0Z92lH4zWOFcx', type: 'Level' },
     { name: '#70 - Renevant', id: '58161496', author: 'Nikrodox', Beaten: '2 Aug 2024', videoUrl: 'https://youtu.be/aS4c2wqBWWk?si=MrwZU_xUTChHPyhj', type: 'Level' },
     { name: '#72 - Trueffet', id: '71434979', author: 'SyQual', Beaten: '10 May 2025', videoUrl: 'https://youtu.be/9R5JbhMtULg', type: 'Level' },
