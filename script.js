@@ -1,6 +1,7 @@
 window.addEventListener('DOMContentLoaded', function() {
   var levels = [
     { name: '#12 - Menace', id: '107805281', author: 'MannyHeffley', Beaten: '31 Aug 2025', videoUrl: 'https://www.youtube.com/watch?v=ProNF02JXsk', type: 'Level' },
+    { name: '#43 - Edge of Destiny', id: '89187968', author: 'CDMusic', Beaten: '20 Jan 2026', videoUrl: 'https://www.youtube.com/watch?v=SjKRKqYiYcw', type: 'Level' },
     { name: '#9 - Firework', id: '75206202', author: 'TrickGMD', Beaten: '20 Oct 2023', videoUrl: 'https://youtu.be/YZAoOEVvK8I', type: 'Level' },
     { name: '#50 - The Yangire', id: '110500920', author: 'Dorami', Beaten: '25 Nov 2025', videoUrl: 'https://youtu.be/1ZoJ_I4fzcU?si=liuO6ueDVk31Uo5p', type: 'Level' },
     { name: '#27 - Kosetsu', id: '109439644', author: 'fwwe', Beaten: '1 Oct 2025', videoUrl: 'https://youtu.be/k4K4pkbg6lU?si=hzOSNw6MrfhjDWMt', type: 'Level' },
